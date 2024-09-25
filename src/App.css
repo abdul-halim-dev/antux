@@ -1,0 +1,283 @@
+ *{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+
+ }
+ 
+
+ :root {
+    --font-default: 'Barlow', sans-serif;
+    --font-heading: 'Barlow', sans-serif;
+    --fontawesome: "Font Awesome 5 Pro";
+    --black: #000000;
+    --dark: #120f12;
+    --dark-secondary: #1a1a1a;
+    --dark-optional: #313030;
+    --dark-style-two: #1c1c1c;
+    --white: #ffffff;
+    --color-primary: #FFAE00;
+    --color-secondary: #F54200;
+    --color-heading: #04000b;
+    --color-paragraph: #666666;
+    --box-shadow-primary: -1px 3px 10px 0 rgba(0, 0, 0, 0.6);
+    --box-shadow-secondary: 0 10px 30px 0 rgba(44, 130, 237, 0.4);
+    --box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
+    --bg-gray: #ECF0F3;
+    --bg-gray-secondary: #F3F4F6;
+    --bg-gradient: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  }
+  :root {
+    --box-shadow: 0px 0px 20px 0px rgba(7, 20, 52, .1);
+    --box-shadow-secondary: 0 6px 12px rgba(0, 0, 0, 0.175);
+    --box-shadow-extra: 0 5px 50px 0 rgba(0, 0, 0, 0.15);
+    --box-shadow-dark: 0px 0px 0px;
+  }
+  :root {
+    --swiper-navigation-size: 44px;
+  }
+  :root {
+    --swiper-theme-color: #007aff;
+  }
+  :root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13,110,253;
+    --bs-secondary-rgb: 108,117,125;
+    --bs-success-rgb: 25,135,84;
+    --bs-info-rgb: 13,202,240;
+    --bs-warning-rgb: 255,193,7;
+    --bs-danger-rgb: 220,53,69;
+    --bs-light-rgb: 248,249,250;
+    --bs-dark-rgb: 33,37,41;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-color-rgb: 33,37,41;
+    --bs-body-bg-rgb: 255,255,255;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+
+  }
+
+
+  body{
+    width: 100%;
+    
+  }
+
+.home_container{
+  padding: 0px 70px;
+  background: url('./src/img/bg4.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:auto;
+}
+
+.main_container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+  header{
+    background: var(--bs-light);
+    padding: 0px 70px !important;
+    position: sticky;
+      top: 0%;
+      left: 0%;
+  }
+
+  .res_icon{
+    display: none; 
+   }
+
+ 
+
+  .let_contact{
+    width: 180px;
+    height: 50px;
+    background: var(--black);
+    border-radius: 25px;
+   
+  }
+  
+  .let_contact a{
+    width: 100%;
+    height: 100%;
+   text-decoration: none;
+   color: var(--bs-light);
+   position: relative;
+  
+  }
+  
+  .let_contact a::before{
+    content: ' ';
+    position: absolute;
+    border-radius: 25px;
+    transition: 0.2s linear;
+    top: 0%;
+    right: 0%;
+    width: 0%;
+    height: 0%;
+  
+  }
+   
+  
+  .let_contact a:hover::before{
+  width: 100%;
+  height: 100%;
+  background: var(--color-secondary);
+  color: var(--bs-body-bg);
+  
+  }
+   
+  .active{
+    color: var(--color-secondary);
+  }
+  
+  nav ul li a{
+     font-size: 17px;
+     font-weight: 600;
+  }
+   
+
+  
+  
+
+  
+  @media screen and (max-width:1018px) {
+    
+    header{
+      
+      background: rgba(255, 255, 255);
+       width: 100vw;
+ 
+       -webkit-backdrop-filter: blur(4px);
+       backdrop-filter: blur(4px);
+       box-shadow: var( --box-shadow-regular);
+     
+       
+    }
+     
+
+  }
+
+  @media screen and (max-width:924px) {
+    
+   .res_icon{
+    display: flex;
+   }
+   nav{
+    display: none;
+   }
+   .logo_box{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   }
+
+  }
+  
+
+  @media screen and (max-width:750px) {
+ 
+   .logo_box{
+    width: 100%;
+    justify-content: space-between;
+     
+   }
+
+  }
+  
+  
+  @media screen and (max-width:950px) {
+ 
+    .home_container{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .home_right_box{
+      width: 100%;
+    }
+
+    .image_boxx{
+      width: 100%;
+      height: auto;
+    }
+
+    .home_left_box{
+      width: 100%;
+    }
+  }
+   
+  @media screen and (max-width:700px){
+.home_container{
+  padding: 0px 20px;
+}
+header{
+  padding: 0px 20px;
+}
+  }
+
+  /* ==========     home section css start here ============= */
+  
+  .hire_box{
+   width: 150px;
+   height: 50px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f75600+0,fe9a01+100 */
+background: linear-gradient(to bottom,  #f75600 0%,#fe9a01 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+color: var(--bg-gray);
+border-radius: 8px;
+font-weight: 600;
+font-size: 18px;
+  }
+  .image_boxx{
+    background: url('./src/img/shape1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* ==========     home section css end here ============= */
